@@ -2,13 +2,15 @@
 
 import React from 'react'
 import SectionHeading from './section-heading'
-import { FaPaperPlane } from 'react-icons/fa'
 import { motion } from "framer-motion"
 import { useSectionInView } from '@/lib/hooks';
-
+import { sendEmail } from '@/actions/sendEmail'
+import SubmitBtn from './submit-btn';
 export default function Contact() {
 
-    const { ref } = useSectionInView("Contact")
+    const { ref } = useSectionInView("Contact");
+
+
     return (
         <motion.section
             ref={ref}
@@ -32,17 +34,24 @@ export default function Contact() {
                 <a className='underline' href="mailto:vikrambhat@outlook.com"> vikrambhat@outlook.com</a>
                 {" "}or through this form.
             </p>
-            <form className='mt-10 flex flex-col'>
-                <input className='h-14 px-4 rounded-lg borderBlack'
-                    type="email" placeholder='Your email' />
-                <textarea className='h-52 my-3 rounded-lg borderBlack p-4' placeholder='Your message' />
-                <button type="submit" className=" group flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gray-900 text-white
-                 rounded-full outline-none transition-all focus:scale-110 hover:scale-110
-                 hover:bg-gray-950 active-scale-105">
-                    Submit <FaPaperPlane className='text-xs opacity-70 transition-all
-                    group-hover:translate-x-1
-                    group-hover:translate-y-1' /> {" "}
-                </button>
+            <form className='mt-10 flex flex-col'
+                action={async (formData) => sendEmail}>
+                <input
+                    className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+                    name="senderEmail"
+                    type="email"
+                    required
+                    maxLength={500}
+                    placeholder="Your email"
+                />
+                <textarea
+                    className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+                    name="message"
+                    placeholder="Your message"
+                    required
+                    maxLength={5000}
+                />
+                <SubmitBtn />
             </form>
         </motion.section>
     )
