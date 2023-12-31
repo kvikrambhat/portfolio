@@ -75,18 +75,18 @@ export default function Intro() {
                 </Link>
 
                 <a className='group bg-white text-gray-900 px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110
-                                                hover:scale-110 active:scale-105 transition cursor-pointer borderBlack' href='/CV.pdf' download={true}>
+                                                hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:text-white/60 dark:bg-white/10' href='/CV.pdf' download={true}>
                     Download CV <HiDownload className='opacity-60 group-hover:translate-y-1 transition' />
                 </a>
 
                 <a className='bg-white text-gray-750 p-4 flex items-center gap-2 rounded-full outline-none focus:scale-[1.15]
-                             hover:text-gray-950 hover:scale-[1.15] active:scale-[1.15] transition cursor-pointer borderBlack'
+                             hover:text-gray-950 hover:scale-[1.15] active:scale-[1.15] transition cursor-pointer borderBlack dark:text-white/60 dark:bg-white/10'
                     href="https://www.linkedin.com/in/kvikrambhat/" target='_blank'>
                     <BsLinkedin />
                 </a>
 
                 <a className='bg-white text-gray-750 p-4 flex items-center gap-2 text-[1.35rem] rounded-full outline-none focus:scale-[1.15]
-                            hover:text-gray-950 hover:scale-[1.15] active:scale-[1.15] transition cursor-pointer borderBlack'
+                            hover:text-gray-950 hover:scale-[1.15] active:scale-[1.15] transition cursor-pointer borderBlack dark:text-white/60 dark:bg-white/10'
                     href="https://github.com/kvikrambhat" target='_blank'>
                     <FaGithubSquare />
                 </a>
