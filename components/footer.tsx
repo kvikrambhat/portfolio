@@ -4,7 +4,7 @@ export default function Footer() {
     return (
         <footer className='mb-10 px-4 text-center text-gray-500'>
             <p className='text-xs'>
-                <span className='font-semibold'>About this website:</span> built with React & Next.js, Tailwind CSS, hosted on Netlify
+                <span className='font-semibold'>About this website:</span> built with React & Next.js, Tailwind CSS, hosted on Netlify, code on <a href="https://github.com/kvikrambhat/portfolio" className="underline">github</a>
             </p>
         </footer>
     )

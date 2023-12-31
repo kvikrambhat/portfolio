@@ -5,6 +5,8 @@ import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
+import grlLogo from "@/public/grl.png";
+import presLogo from "@/public/pres.png"
 
 export const links = [
   {
@@ -35,28 +37,22 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    company: "Prescinto Technologies",
+    title: "Technical Manager",
+    location: "Bangalore, IN",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "August 2023 - February 2024",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    company: "Granite River Labs",
+    title: "Software Development Manager",
+    location: "Bangalore, IN",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "October 2013 - July 2023",
   },
 ] as const;
 
