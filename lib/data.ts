@@ -42,7 +42,7 @@ export const experiencesData = [
     location: "Bangalore, IN",
     description:
       "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
-    icon: React.createElement(LuGraduationCap),
+    icon: React.createElement("img", { src: presLogo.src }),
     date: "August 2023 - February 2024",
   },
   {
@@ -50,8 +50,11 @@ export const experiencesData = [
     title: "Software Development Manager",
     location: "Bangalore, IN",
     description:
-      "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
-    icon: React.createElement(CgWorkAlt),
+      `As Engineering Manager at GRL, I led a team of 18 engineers, driving the design and development of certification solutions 
+      for Wi-Fi, Thread, Chip, and Wi-SUN standards. I accelerated client development by shifting to gRPC, automated Wi-Fi 
+      certification to reduce costs, and streamlined testing efforts by 50% using microservices. Also, I introduced a sandbox 
+      framework for our Angular app, boosting development speed and maintainability.`,
+    icon: React.createElement("img", { src: grlLogo.src }),
     date: "October 2013 - July 2023",
   },
 ] as const;
@@ -62,7 +65,7 @@ export const projectsData = [
     description:
       "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
     tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+    imageUrl: presLogo,
   },
   {
     title: "rmtDev",
@@ -80,24 +83,44 @@ export const projectsData = [
   },
 ] as const;
 
-export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
+export const technicalSkills = [
+  "C#",
   "Python",
-  "Django",
-  "Framer Motion",
-] as const;
+  "Javascript/Typescript",
+  "React/NextJS",
+  "Azure",
+  "Docker",
+  "Kubernetes",
+  "Angular",
+  "Blazor",
+  ".Net Core",
+  "Flask",
+  "FastAPI",
+  "WPF",
+];
+
+
+export const methodology = [
+  "Agile methodology",
+  "MVC",
+  "C4 Model",
+  "Micorservices",
+  "MVVM",
+  "Containerization",
+  "System Desing",
+  "Data Structures"
+];
+
+export const tools = [
+  "Jenkins",
+  "Git",
+  "Github Actions",
+  "Structurizr",
+  "JIRA",
+  "ESF",
+  "PlantUML",
+  "Selenium",
+  "ispirer",
+  "Icepanel",
+  "Zoho"
+];
