@@ -4,13 +4,14 @@ import ContactFormEmail from "@/email/contact-form-email";
 import { getErrorMessage, validateString } from "@/lib/utils";
 import { Resend } from "resend";
 
+console.log(process.env)
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export const sendEmail = async (formData: FormData) => {
     const message = formData.get("message");
     const senderEmail = formData.get("senderEmail");
 
-    if (!validateString(sendEmail, 100)) {
+    if (!validateString(senderEmail, 100)) {
         return {
             error: "Invalid email address"
         }

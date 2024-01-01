@@ -32,7 +32,7 @@ export default function Contact() {
         >
             <SectionHeading>Contact me</SectionHeading>
             <p className='text-gray-700 -mt-6 dark:text-white/80'>Please contact me directly at {" "}
-                <a className='underline' href="mailto:bhat_vikram@outlook.com"> vikrambhat@outlook.com</a>
+                <a className='underline' href="mailto:bhat_vikram@outlook.com"> bhat_vikram@outlook.com</a>
                 {" "}or through this form.
             </p>
             <form className='mt-10 flex flex-col dark:text-black'
