@@ -40,8 +40,9 @@ export const experiencesData = [
     company: "Prescinto Technologies",
     title: "Technical Manager",
     location: "Bangalore, IN",
-    description:
-      "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
+    description: `
+    As Technical Manager at Prescinto, I spearheaded the enhancement of our data ingestion pipelines, focusing on MQTT and FTP systems. My role involved modernizing these pipelines to ensure they could seamlessly auto-scale, leveraging Azure services like Azure MQTT and Azure SFTP. This initiative aimed to create robust, auto-scaling solutions for efficient data handling. Throughout,these initiatives not only optimized technical operations but also resulted in tangible cost savings, heightened reliability, and scalability across our infrastructure.
+      `,
     icon: React.createElement("img", { src: presLogo.src }),
     date: "August 2023 - February 2024",
   },
@@ -50,10 +51,7 @@ export const experiencesData = [
     title: "Software Development Manager",
     location: "Bangalore, IN",
     description:
-      `As Engineering Manager at GRL, I led a team of 18 engineers, driving the design and development of certification solutions 
-      for Wi-Fi, Thread, Chip, and Wi-SUN standards. I accelerated client development by shifting to gRPC, automated Wi-Fi 
-      certification to reduce costs, and streamlined testing efforts by 50% using microservices. Also, I introduced a sandbox 
-      framework for our Angular app, boosting development speed and maintainability.`,
+      `As Engineering Manager at GRL, I led a team of 18 engineers, driving the design and development of certification solutions for Wi-Fi, Thread, Chip, and Wi-SUN standards. I accelerated client development by shifting to gRPC, automated Wi-Fi certification to reduce costs, and streamlined testing efforts by 50% using microservices. Also, I introduced a sandbox framework for our Angular app, boosting development speed and maintainability.`,
     icon: React.createElement("img", { src: grlLogo.src }),
     date: "October 2013 - July 2023",
   },
